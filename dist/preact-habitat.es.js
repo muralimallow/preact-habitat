@@ -117,7 +117,7 @@ var widgetDOMHostElements = function (
     selector = getHabitatSelectorFromClient(currentScript);
   }
   if (selector) {
-    [].forEach.call(document.querySelectorAll(selector), function (queriedTag) {
+    [].forEach.call(parent.document.querySelectorAll(selector), function (queriedTag) {
       hostNodes.push(queriedTag);
     });
   }
