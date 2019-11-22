@@ -110,7 +110,7 @@ const widgetDOMHostElements = (
     selector = getHabitatSelectorFromClient(currentScript);
   }
   if (selector) {
-    [].forEach.call(document.querySelectorAll(selector), queriedTag => {
+    [].forEach.call(parent.document.querySelectorAll(selector), queriedTag => {
       hostNodes.push(queriedTag);
     });
   }
